@@ -1,0 +1,13 @@
+Interface: https://www.youtube.com/watch?v=krgaEFmq2Uw
+		+
+Complemento para convertir con Showdown.js: https://www.youtube.com/watch?v=MtvjOftAsnA
+
+	https://showdownjs.com/
+	https://css-tricks.com/choosing-right-markdown-parser/
+	
+
+	cdnjs.com para linkear la librería
+
+
+ECUACIONES LATEX-->HTMLimage:: https://latex.codecogs.com/
+	<img src="https://latex.codecogs.com/svg.image?ECUACION" />
