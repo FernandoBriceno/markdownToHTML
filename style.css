@@ -30,9 +30,9 @@ textarea, input, div, button {
 /* Controls Section */
 .controls {
     background-color: rgb(156, 198, 175);
-    padding: 10px;
-    
-    height: 32%;
+    margin-top:-12px;
+    padding-bottom: 5px;
+    height: 30%;
     /*
     position:fixed;
     width: 100%;
