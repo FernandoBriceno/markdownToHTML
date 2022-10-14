@@ -63,9 +63,14 @@ const openInDefaultButton = document.querySelector('#open-in-default');
 
 const renderToMarkdown = (markdown) => { /*Función que conviernte a markdown */
 
-    var txtMarkdown = generateEquation(markdown,'<img src="https://latex.codecogs.com/svg.image?', '" />') ;
+    /*var txtMarkdown = generateEquation(markdown,'<img src="https://latex.codecogs.com/svg.image?', '" />'); /*para usar imagenes desde generador de latex*/
+    var txtMarkdownImage = generateEquation(markdown,'<img src="https://latex.codecogs.com/svg.image?', '" />');
+    var txtMarkdown = markdown;
+
+    var txtHTMLimage = new showdown.Converter().makeHtml(txtMarkdownImage);
     var txtHTML = new showdown.Converter().makeHtml(txtMarkdown);
-    htmlView.innerHTML =  new showdown.Converter().makeHtml(txtHTML);
+
+    htmlView.innerHTML =  new showdown.Converter().makeHtml(txtHTMLimage);
     htmlOculto.value =  new showdown.Converter().makeHtml(txtHTML);
 };
 

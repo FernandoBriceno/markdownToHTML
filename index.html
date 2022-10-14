@@ -7,14 +7,35 @@
     <title>Electron Markdown Editor</title>
     <link rel="stylesheet" href="./style.css">
 
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" defer></script>
-    <script src="./renderer.js" defer></script>
+    <!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" defer></script>-->
+    <script src="./js/showdown.min.js" defer></script>
+    <script src="./js/renderer.js" defer></script>
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> 
+    <script id="MathJax-script" async src="./js/mathJax/tex-mml-chtml.js"></script>
+    <!-- To NO Center MATHJAX -->
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <!-- To  NO Center MATHJAX -->
+
+
 </head>
-<body>
-    
+<body>   
     
     <section class="controls">
+        <p>Type this on your HTML document head:</p>
+        <div class="putInHead">
+            <p>&ltscript src="https://polyfill.io/v3/polyfill.min.js?features=es6"&gt&lt/script&gt </p>
+            <p>&ltscript id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">&lt/script&gt</p>
+            <p>&ltscript type="text/x-mathjax-config"&gtMathJax.Hub.Config({tex2jax: {inlineMath: [['$<span>','$'], ['\\(','\\)']]}});&lt/script&gt</span></p>
+            <p>&ltscript type="text/javascript" async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"&gt&lt/script&gt</p>
+        </div>
         <button id="return">Return</button>
         <button id="add-img">Add Image</button>
         <button id="revert-all">Revert All</button>
@@ -34,7 +55,6 @@
 
     <textarea style="display: block;" id="html-oculto"></textarea>
 
-    
-   
 </body>
 </html>
+

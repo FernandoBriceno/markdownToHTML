@@ -30,7 +30,10 @@ textarea, input, div, button {
 /* Controls Section */
 .controls {
     background-color: rgb(156, 198, 175);
-    padding: 10px;/*
+    padding: 10px;
+    
+    height: 32%;
+    /*
     position:fixed;
     width: 100%;
     display: block;*/
@@ -66,7 +69,7 @@ button:disabled {
 }
 
 .content {
-    height: 95vh;
+    height: 68%;
     display: flex;
 }
 
@@ -88,4 +91,14 @@ button:disabled {
 
 #copy-button {
     margin-left: 50%;
+}
+.putInHead{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 5px;
+}
+.putInHead p{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 5px;
 }
